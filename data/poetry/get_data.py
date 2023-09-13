@@ -10,7 +10,7 @@ for data in datas:
         item = json.load(fp)
         for each in item :
             if len(each['paragraphs']) == 2 and len(each['paragraphs'][0]) == 12 and len(each['paragraphs'][1]) == 12:
-                with open("tangshi.txt", "a", encoding='utf-8') as f:
+                with open("input.txt", "a", encoding='utf-8') as f:
                     f.write("".join(each['paragraphs']))
                     f.write('\n')
 

@@ -6,11 +6,10 @@ encoder and decoder and some other related info.
 """
 import os
 import pickle
-import requests
 import numpy as np
 
 
-with open("E:/project/python/nanoGPT/data/poetry/tangshi.txt", 'r', encoding='utf-8') as f:
+with open("./data/poetry/input.txt", 'r', encoding='utf-8') as f:
     data = f.read()
 print(f"length of dataset in characters: {len(data):,}")
 
